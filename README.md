@@ -1,5 +1,7 @@
 # PepSeq: a Novel Algorithm for Accurate De Novo Sequencing of Tandem Mass Spectra
 
+Table 1: Possible fragmentation edges.
+
 | Ion 1 | Ion 2 | Edge label | Difference in Dalton (z = 1) | Node Type                    |
 |-------|-------|------------|------------------------------|------------------------------|
 | a     | b-H2O | ɘ10        | 10                           | N-terminal with neutral loss |
@@ -23,4 +25,29 @@
 | z     | x     | ɘ43        | 43                           | C-terminal                   |
 | y-NH3 | x     | ɘ44        | 44                           | C-terminal with neutral loss |
 | y-H2O | x     | ɘ45        | 45                           | C-terminal with neutral loss |
+
+Table 2: Possible amino acid edges. Some amino acids are very similar in mass and may not be differentiated depending on the instrument error. These are grouped and an example grouping for ɛ = 0.5 is given in the table below.
+
+| Amino acid    | Edge Label | Group label | Monoisotopic mass |
+|---------------|------------|-------------|-------------------|
+| Glycine       | ɘG         |             | 57.021674         |
+| Alanine       | ɘA         |             | 71.037474         |
+| Serine        | ɘS         |             | 87.032374         |
+| Proline       | ɘP         |             | 97.053274         |
+| Valine        | ɘV         |             | 99.069074         |
+| Threonine     | ɘT         |             | 101.048174        |
+| Cysteine      | ɘC         |             | 103.009574        |
+| Leucine       | ɘJ         |             | 113.084874        |
+| Isoleucine    | ɘJ         |             | 113.084874        |
+| Asparagine    | ɘN         |             | 114.043348        |
+| Aspartic acid | ɘD         |             | 115.027274        |
+| Glutamine     | ɘQ         |             | 128.059148        |
+| Lysine        | ɘK         |             | 128.095848        |
+| Glutamic acid | ɘE         |             | 129.043074        |
+| Methionine    | ɘM         |             | 131.041174        |
+| Histidine     | ɘH         |             | 137.059422        |
+| Phenylalanine | ɘF         |             | 147.069074        |
+| Arginine      | ɘR         |             | 156.101996        |
+| Tyrosine      | ɘY         |             | 163.063974        |
+| Tryptophan    | ɘW         |             | 186.080048        |
 
